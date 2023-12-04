@@ -3,6 +3,7 @@ yum install python3-pip
 sudo pip3 install --upgrade pip
 python3 -V
 pip3 install ansible    -- install ansible with pip
+pip3 install boto3
 
 --for aws
 amazon-linux-extras install ansible2
