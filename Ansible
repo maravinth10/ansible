@@ -6,9 +6,9 @@ pip3 install ansible    -- install ansible with pip
 pip3 install boto3
 
 --for aws
-amazon-linux-extras install ansible2
-yum install python-pip
-pip install boto
+yum install ansible
+yum install python3-pip
+pip install boto3
 
 --end 
 
