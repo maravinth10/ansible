@@ -4,6 +4,16 @@ sudo pip3 install --upgrade pip
 python3 -V
 pip3 install ansible    -- install ansible with pip
 
+--for aws
+amazon-linux-extras install ansible2
+yum install python-pip
+pip install boto
+
+--end 
+
+ansible-playbook --syntax-check ijdic.yml
+ansible-playbook -C icjjcdc.yml
+
 vi ansible.cfg
 ansible-config init --disabled -t all > ansible.cfg
 
