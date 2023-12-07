@@ -36,4 +36,4 @@ To copy files
 ansible all -i clients.txt -m copy -a "src=./clients.txt dest=/home/maravinth/clients.txt")
 
 --with private key
-ansible all -i host -m ping -e 'ansible_python_interpreter="/usr/bin/env python"' -u ec2-user --private-key mumbai_linux_pem.pem
+ansible all -i host -m ping -u ec2-user --private-key mumbai_linux_pem.pem
