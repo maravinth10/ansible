@@ -15,8 +15,11 @@ pip install boto3
 
 --end 
 
-ansible-playbook --syntax-check ijdic.yml
-ansible-playbook -C icjjcdc.yml
+ansible-playbook -i host --syntax-check nginx.yml
+ansible-playbook -i host -C nginx.yml
+
+--ansible playbook run cmd
+ansible-playbook -i host nginx.yml --private-key mumbai_linux_pem.pem
 
 vi ansible.cfg
 ansible-config init --disabled -t all > ansible.cfg
