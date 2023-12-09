@@ -1,5 +1,9 @@
 sudo yum install epel-release
 sudo yum install ansible   ------without pip install ansible
+client and master python version should be same (python -V
+Python 3.9.18)
+
+
 
 yum install python3-pip
 (sudo pip3 install --upgrade pip)
