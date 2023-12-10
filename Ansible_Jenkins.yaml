@@ -17,7 +17,7 @@
         state: latest
     - name: Install java
       yum:
-        name: java-1.8.0-amazon-corretto
+        name: java-17-amazon-corretto
         state: present
     - name: Install jenkins
       yum:
