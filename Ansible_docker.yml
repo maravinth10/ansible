@@ -39,8 +39,10 @@
         name: docker
         state: started
         enabled: 'yes'
-#    - name: Add user ec2user to docker group
-#         user:
-#         name: ec2-user
-#         groups: docker
-#         append: 'yes'
+    - name: Add user ec2user to docker group
+      user:
+        name: ec2-user
+        groups: docker
+        append: 'yes'
+    - name: Changing ownership
+      command: chown ec2-user:docker /var/run/docker.sock
