@@ -15,9 +15,9 @@
       yum:
         name: '*'
         state: latest
-    - name: Install java
+    - name: Install java (if aws java-17-amazon-corretto)
       yum:
-        name: java-17-amazon-corretto
+        name: java-11-openjdk-devel
         state: present
     - name: Install jenkins
       yum:
