@@ -27,3 +27,7 @@
       service:
         name: jenkins
         state: started
+    - name: Install Git
+      yum:
+        name: git
+        state: latest
