@@ -31,7 +31,3 @@
       yum:
         name: git
         state: latest
-    - name: Install wget
-      yum:
-        name: wget
-        state: latest
