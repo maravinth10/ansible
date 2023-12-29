@@ -40,3 +40,9 @@
         src: /opt/apache-maven-3.6.3-bin.tar.gz
         dest: /opt
         remote_src: 'yes'
+    - name: jenkins password
+      command: cat /var/lib/jenkins/secrets/initialAdminPassword
+      register: command_output
+
+    - debug:
+            var: command_output.stdout_lines
